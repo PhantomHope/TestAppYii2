@@ -1,0 +1,198 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content:  "\e151";
+}
+
+a.desc:after {
+    content:  "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th,
+.grid-view td:last-child {
+    white-space: nowrap;
+}
+
+.grid-view .filters input,
+.grid-view .filters select {
+    min-width: 50px;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+a.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+a.close-btn i {
+    font-size: 32px;
+    color: #ec4242;
+}
+
+div.product.edit {
+    width: 25%;
+    min-width: 250px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: 1px 1px 5px #f9ff00;
+    border-color: #f8f520;
+}
+
+div.product.edit li {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+}
+
+div.product.edit li label {
+    margin-right: 20px;
+    margin-bottom: 0;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+div.product.edit li input {
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: -1px 1px 2px 2px cadetblue;
+    background: #e5e9f8;
+    padding: 5px 10px;
+}
+
+div.product.edit li input[data-edited=true] {
+    background: #ccf29d;
+}
+
+div.product.edit form a.btn-change[disabled=disabled], div.product.edit form a.btn-add[disabled=disabled] {
+    pointer-events: none;
+    cursor: default;
+    background: #a391d5;
+    box-shadow: 1px 1px 1px #866b6b;
+}
+
+div.product-add {
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    background: #7116b1;
+    border: none;
+}
+
+div.product-add:hover{
+    
+    box-shadow: 1px 1px 10px #c60606;
+}
+
+div.product-add i {
+    font-size: 72px;
+}
